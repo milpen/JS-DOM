@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <section>
+        <h1 class="cart">Корзина</h1>
+        <div class="wrapper">
+            <div class="card1">
+                <div class="card1__img">
+                    <img class="img1" src="./css/images/bananas.jpg" alt="photo of bananas">
+                </div>
+                <div class="card1__text">
+                    <h3>Бананы</h3>
+                    <p>Цвет: желтый</p>
+                    <p>Страна происхождения: Эквадор</p>
+                    <p>Вес, кг: 1</p>
+                </div>
+                <div class="card1__price">
+                    <p id="banana_price">100</p>
+                    <p>руб.</p>
+                </div>
+            </div>
+            <div class="card2">
+                    <div class="card2__img">
+                        <img class="img2" src="./css/images/oranges.jpg" alt="photo of oranges">
+                    </div>
+                    <div class="card2__text">
+                        <h3>Апельсины</h3>
+                        <p>Цвет: оранжевый</p>
+                        <p>Страна происхождения: Испания</p>
+                        <p>Вес, кг: 1</p>
+                    </div>
+                    <div class="card2__price">
+                        <p id="orange_price">150</p>
+                        <p>руб.</p>
+                    </div>
+            </div>
+            <div class="card3">
+                <div class="card3__img">
+                    <img class="img3" src="./css/images/pineapple.jpg" alt="photo of a pineapple">
+                </div>
+                <div class="card3__text">
+                    <h3>Ананас</h3>
+                    <p>Цвет: медово-желтый</p>
+                    <p>Страна происхождения: Тайланд</p>
+                    <p>Вес, кг: 1</p>
+                </div>
+                <div class="card3__price">
+                    <p id="pineapple_price">800</p>
+                    <p>руб.</p>
+                </div>
+            </div>
+            <div class="card4">
+                <div class="card4__img">
+                    <img class="img4" src="./css/images/tomatoes.jpg" alt="photo of tomatoes">
+                </div>
+                <div class="card4__text">
+                    <h3>Томаты</h3>
+                    <p>Цвет: красный</p>
+                    <p>Страна происхождения: Турция</p>
+                    <p>Вес, кг: 1</p>
+                </div>
+                <div class="card4__price">
+                    <p id="tomato_price">200</p>
+                    <p>руб.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__btn">
+                    <button class="button" id="btn">Использовать купон на 20%</button>
+                </div>
+                <div class="container__total">
+                    <p>Итого:
+                    <span id="total_price"></span>руб.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

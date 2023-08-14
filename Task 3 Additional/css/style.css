@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+.cart {
+    font-size: 28px;
+}
+
+.wrapper {
+    max-width: 1278px;
+
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: flex;
+    max-width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 2px;
+}
+.card1__text,
+.card2__text,
+.card3__text,
+.card4__text{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.card1__price,
+.card2__price,
+.card3__price,
+.card4__price {
+    display: flex;
+    width: 30%;
+}
+.img3,
+.img4 {
+    width: 150px;
+}
+.img1 {
+    width: 150px;
+}
+.img2 {
+    width: 150px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.button {
+    padding: 25px;
+    background-color:darkgoldenrod;
+    color: black;
+    font-weight: bold;
+}
+.button:hover {
+    cursor: pointer;
+}
+.container__total {
+    font-weight: bold;
+    font-size: 28px;
+}
