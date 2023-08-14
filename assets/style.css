@@ -167,3 +167,8 @@ div.section {
 .parent {
 	padding: 10px;
 }
+
+.newClass {
+	width: 400px;
+	height: 200px;
+}
