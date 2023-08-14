@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#taskInput {
+    width: 25%;
+}
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+  /* When clicked on, add a background color and strike out text */
+ul li.checked {
+    text-decoration: line-through;
+}
+
+  /* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+  /* Style the "Add" button */
+#addButton {
+    padding: 10px;
+    width: 5%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+#addButton:hover {
+    background-color: #bbb;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+}
