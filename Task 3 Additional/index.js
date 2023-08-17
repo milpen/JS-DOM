@@ -1,23 +1,17 @@
-
-let bananaItem=document.getElementById('banana_price');
-let orangeItem=document.getElementById('orange_price');
-let pineappleItem=document.getElementById('pineapple_price');
-let tomatoItem=document.getElementById('tomato_price');
-const cartSum=+bananaItem.textContent + +orangeItem.textContent + +pineappleItem.textContent + +tomatoItem.textContent;
+const bananaItem=document.getElementById('banana_price');
+const orangeItem=document.getElementById('orange_price');
+const pineappleItem=document.getElementById('pineapple_price');
+const tomatoItem=document.getElementById('tomato_price');
+const cartSum=Number(bananaItem.textContent) + Number(orangeItem.textContent) + Number(pineappleItem.textContent) + Number(tomatoItem.textContent);
 const totalPrice=document.getElementById ('total_price');
 totalPrice.textContent=cartSum;
 
-/*function discount () {
+const discountBananaItem=(Number(bananaItem.textContent)) / 100 * 80;
+const discountOrangeItem=(Number(orangeItem.textContent)) / 100 * 80;
+const discountPineappleItem=(Number(pineappleItem.textContent)) / 100 * 80;
+const discountTomatoItem=(Number(tomatoItem.textContent)) / 100 *80;
 
-    totalPrice.textContent=(cartSum / 100 * 80);
-}*/
-
-let discountBananaItem=(Number(bananaItem.textContent)) / 100 * 80;
-let discountOrangeItem=(Number(orangeItem.textContent)) / 100 * 80;
-let discountPineappleItem=(Number(pineappleItem.textContent)) / 100 * 80;
-let discountTomatoItem=(Number(tomatoItem.textContent)) / 100 *80;
-
-function discount () {
+function getDiscount () {
     bananaItem.textContent=discountBananaItem;
     orangeItem.textContent=discountOrangeItem;
     pineappleItem.textContent=discountPineappleItem;
@@ -25,4 +19,4 @@ function discount () {
     totalPrice.textContent= discountBananaItem + discountOrangeItem + discountPineappleItem + discountTomatoItem;
 }
 const button= document.getElementById("btn");
-button.addEventListener("click", discount);
+button.addEventListener("click", getDiscount);
